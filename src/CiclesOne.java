@@ -1,17 +1,15 @@
+import java.time.LocalDate;
+import java.time.Month;
+
 public class CiclesOne {
     public static void main(String[] args) {
-        int n = 10;
-        int[] a = new int[10];
-        int[] b = {12, 42, 233, 43, 123, 0, 0,};
-        for (int j : b) {
-            System.out.println(j);
-        }
+        LocalDate data = LocalDate.of(2001,01,11);
 
-
-
-
-
-
+        int year = data.getYear();
+        Month mont = data.getMonth();
+        int day = data.getDayOfMonth();
+        System.out.println(mont + "day" + year);
+        System.out.println(day);
     }
 
 }
